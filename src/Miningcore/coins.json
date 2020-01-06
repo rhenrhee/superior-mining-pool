@@ -1372,4 +1372,23 @@
         "explorerTxLink": "https://gastracker.io/tx/{0}",
         "explorerAccountLink": "https://gastracker.io/addr/{0}"
     }
+	    "Exosis": {
+        "name": "exosis",
+        "symbol": "RVN",
+        "family": "bitcoin",
+        "coinbaseHasher": {
+            "hash": "sha256d"
+        },
+        "headerHasher": {
+            "hash": "x16r"
+        },
+        "blockHasher": {
+            "hash": "reverse",
+            "args": [ { "hash": "x16r" } ]
+        },
+        "shareMultiplier": 256,
+        "explorerBlockLink": "https://www.blockexperts.com/exo/$hash$",  
+        "explorerTxLink": "https://www.blockexperts.com/exo/tx/{0}",
+        "explorerAccountLink": "https://www.blockexperts.com/exo/{0}"
+    },
 }
