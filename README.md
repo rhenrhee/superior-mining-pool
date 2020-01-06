@@ -4,7 +4,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/coinfoundry/miningcore-docker.svg)]()
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
-### Features
+### Features / Возможности
 
 - Supports clusters of pools each running individual currencies
 - Ultra-low-latency, multi-threaded Stratum implementation using asynchronous I/O
@@ -20,25 +20,25 @@
 - Runs on Linux and Windows
 - [Gitter Channel](https://gitter.im/miningcore/Lobby)
 
-### Supported Coins
+### Supported Coins / Поддерживаемые монеты
 
 Refer to [this file](https://github.com/coinfoundry/miningcore/blob/master/src/Miningcore/coins.json) for a complete list.
 
-#### Ethereum
+#### Ethereum / Эфириум
 
 Miningcore implements the [Ethereum stratum mining protocol](https://github.com/nicehash/Specifications/blob/master/EthereumStratum_NiceHash_v1.0.0.txt) authored by NiceHash. This protocol is implemented by all major Ethereum miners.
 
 - Claymore Miner must be configured to communicate using this protocol by supplying the <code>-esm 3</code> command line option
 - Genoil's ethminer must be configured to communicate using this protocol by supplying the <code>-SP 2</code> command line option
 
-#### ZCash
+#### ZCash 
 
 - Pools needs to be configured with both a t-addr and z-addr (new configuration property "z-address" of the pool configuration element)
 - First configured zcashd daemon needs to control both the t-addr and the z-addr (have the private key)
 - To increase the share processing throughput it is advisable to increase the maximum number of concurrent equihash solvers through the new configuration property "equihashMaxThreads" of the cluster configuration element. Increasing this value by one increases the peak memory consumption of the pool cluster by 1 GB.
 - Miners may use both t-addresses and z-addresses when connecting to the pool
 
-### Donations
+### Donations / Пожертвования
 
 This software comes with a built-in donation of 0.1% per block-reward to support the ongoing development of this project. You can also send donations directly to the following accounts:
 
@@ -52,20 +52,20 @@ This software comes with a built-in donation of 0.1% per block-reward to support
 * BTG:  `GQb77ZuMCyJGZFyxpzqNfm7GB1rQreP4n6`
 * XMR: `475YVJbPHPedudkhrcNp1wDcLMTGYusGPF5fqE7XjnragVLPdqbCHBdZg3dF4dN9hXMjjvGbykS6a77dTAQvGrpiQqHp2eH`
 
-### Runtime Requirements on Windows
+### Runtime Requirements on Windows / Необходимые библиотеки для сборки под Microsoft Windows
 
 - [.Net Core 2.2 Runtime](https://www.microsoft.com/net/download/core)
 - [PostgreSQL Database](https://www.postgresql.org/)
 - Coin Daemon (per pool)
 
-### Runtime Requirements on Linux
+### Runtime Requirements on Linux / Необходимые библиотеки для сборки под Linux
 
 - [.Net Core 2.2 SDK](https://www.microsoft.com/net/download/core)
 - [PostgreSQL Database](https://www.postgresql.org/)
 - Coin Daemon (per pool)
 - Miningcore needs to be built from source on Linux. Refer to the section further down below for instructions.
 
-### Running pre-built Release Binaries on Windows
+### Running pre-built Release Binaries on Windows 
 
 - Download miningcore-win-x64.zip from the latest [Release](https://github.com/coinfoundry/miningcore/releases)
 - Extract the Archive
